@@ -59,3 +59,29 @@ document.getElementById('hire-btn').addEventListener('click', function(e) {
     alert('Email address copied! You can now send me a message. Looking forward to hearing from you!');
 });
 
+(function(){
+    emailjs.init({
+    publicKey: "ubX1QxKZMvYClXi_Q",
+        });
+})();
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // These are the variables that will be sent in the email
+    const formData = {
+        from_name: this.name.value,
+        email_id: this.email.value,
+        phone_no: this.phone.value,
+        subject_emailjs: this.subject.value,
+        message_emailjs: this.message.value
+    };
+
+    // Send the email using EmailJS
+    emailjs.send('service_13z4gxe', 'template_7brabsm', formData)
+    .then(function(response) {
+        alert('Message sent successfully!');
+    }, function(error) {
+        alert('Failed to send the message. Please try again later.');
+    });
+});
