@@ -385,12 +385,13 @@ position: relative;
     display: flex;
     flex-direction: column;
     text-align: left;
-    max-height: 200px;
+    max-height: 300px;
     justify-content: left;
     align-items: baseline;
     padding: 5rem 5rem;
 }
 .service-info h4{
+    
     font-size:3rem;
     font-weight: 800;
     line-height: 2;
@@ -649,26 +650,21 @@ position: relative;
         grid-template-columns: repeat(1,1fr);
         padding-bottom: 7rem;
     }
-    .service-info {
-        align-items: flex-start; /* Ensure items are aligned to the top */
-        padding: 10px;
-      }
     .service-info h4{
-        font-size: 20px;
+        font-size: 2.5rem;
         line-height: 1.5;
     }
     .service-info p{
-        font-size: 14px; /* Adjust the font size for smaller screens */
-        line-height: 1.4;  /* Adjust the line-height for better spacing */
-        /* margin-bottom: 1rem; */
+        font-size: 1.4rem; /* Adjust the font size for smaller screens */
+        line-height: 1.6;  /* Adjust the line-height for better spacing */
+        margin-bottom: 1rem;
     }
     .service-box {
         padding: 4rem 3rem;  /* Reduce padding inside service boxes */
-        height: auto;        /* Let the height adjust automatically based on content */
+        height: 360px;        /* Let the height adjust automatically based on content */
         border-radius: 2rem; /* Adjust border-radius for a more compact look */
     }
 }
-
 
 .faq-page {
     padding: 10rem 12%;
