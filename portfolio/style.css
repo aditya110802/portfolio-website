@@ -661,7 +661,7 @@ position: relative;
     }
     .service-box {
         padding: 4rem 3rem;  /* Reduce padding inside service boxes */
-        height: 360px;        /* Let the height adjust automatically based on content */
+        height: 400px;        /* Let the height adjust automatically based on content */
         border-radius: 2rem; /* Adjust border-radius for a more compact look */
     }
 }
