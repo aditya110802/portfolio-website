@@ -429,8 +429,8 @@ position: relative;
     gap:3rem;
 }
 .testimonial-item{
-    min-height:550px;
-    max-width: 450px;
+    min-height:450px;
+    max-width: 400px;
     background: rgba(0,0,0,0.7);
     border: 3px solid rgba(238,238,238,0.2);
     border-radius: 2rem;
@@ -647,6 +647,89 @@ position: relative;
     }
     .services-container{
         grid-template-columns: repeat(1,1fr);
+        padding-bottom: 7rem;
+    }
+    .service-info h4{
+        font-size: 2.5rem;
+        line-height: 1.5;
+    }
+    .service-info p{
+        font-size: 1.4rem; /* Adjust the font size for smaller screens */
+        line-height: 1.6;  /* Adjust the line-height for better spacing */
+        margin-bottom: 1rem;
+    }
+    .service-box {
+        padding: 4rem 3rem;  /* Reduce padding inside service boxes */
+        height: auto;        /* Let the height adjust automatically based on content */
+        border-radius: 2rem; /* Adjust border-radius for a more compact look */
     }
 }
 
+.faq-page {
+    padding: 10rem 12%;
+    background-color: var(--second-bg-color);
+    color: var(--text-color);
+}
+
+.faq-page h1 {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 5rem;
+    color: var(--text-color);
+}
+
+.faq-item {
+    background-color: var(--bg-color);
+    min-height: 150px;
+    border-radius: 2rem;
+    margin-bottom: 3rem;
+    padding: 3rem;
+    box-shadow: 0 0 25px var(--main-color);
+    border: 2px solid var(--main-color);
+}
+
+.faq-item h2 {
+    font-size: 3rem;
+    color: var(--main-color);
+    margin-bottom: 2rem;
+}
+
+.faq-item p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+footer.copy {
+    font-size: 2rem; /* Increase the size as needed */
+    text-align: center;
+    margin-top: 5rem;
+    color: var(--text-color);
+}
+header h1 {
+    font-size: 6rem; /* Increase the size as needed */
+    text-align: center;
+    margin-bottom: 5rem;
+    color: var(--text-color);
+}
+.go-back-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem auto 0 auto;
+    padding: 1rem 3rem;
+    background-color: var(--main-color);
+    color: black;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    box-shadow: 0 0 25px var(--main-color);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+    width: fit-content; /* Ensure the button width fits the content */
+}
+
+.go-back-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 50px var(--main-color);
+}
